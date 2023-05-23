@@ -1,0 +1,33 @@
+<html>
+    <form id="form-shower">
+        <select id="myselect">
+        <option value="" selected="selected"></option>
+        <option value="form_name1">Form 1</option>
+        <option value="form_name2">Form 2</option>
+        <option value="form_name3">Form 3</option>
+        </select>
+        </form>
+        
+        <form name="form_name1" id="form_name1" style="display:none">
+        <p>hello</p>
+        </form>
+        
+        <form name="form_name2" id="form_name2" style="display:none">
+        <p>hii</p>
+        </form>
+        
+        <form name="form_name3" id="form_name3" style="display:none">
+        <!---- THIS IS FORM 3---->
+        </form>
+        <script>
+        $("#myselect").on("change", function() {
+            $("#" + $(this).val()).show().siblings().hide();
+        })
+        </script>
+</html>
+<html>
+    
+    </head>
+    <body>
+        
+</html>
